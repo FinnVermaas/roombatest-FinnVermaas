@@ -18,11 +18,20 @@ public class Challenge extends Head {
 	 */
 	public void initialize() {
 		//write code here!
-		
-		
+		turn90();
+		straight();
+		turn90();
+	
 		
 	}
-
+public void turn90(){
+	driveDirect(415,500);
+	sleep(5100);
+}
+public void straight(){
+	driveDirect(100,100);
+	sleep(12500);
+}
 	public void loop() {
 	
 	}
